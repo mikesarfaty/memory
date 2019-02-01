@@ -3,7 +3,21 @@
 @import "~milligram/dist/milligram";
 
 .column > p {
-    padding-top: 10ex;
+    padding: 30px;
     text-align: center;
+    font-size: 40px;
+    border: 2px solid black;
+    background: LightGray;
+}
+
+.row > div {
+    background: Gray;
+}
+
+button {
+    margin: auto;
+    font-color: White;
+    background: Black;
+    border: 2px solid DarkGray;
 }
 
