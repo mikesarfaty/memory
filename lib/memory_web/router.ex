@@ -17,6 +17,8 @@ defmodule MemoryWeb.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    post "/game", PageController, :join # post to this to get a specific game
+    get "/:name", PageController, :join # or go to the game directly via url
   end
 
   # Other scopes may use custom stacks.
