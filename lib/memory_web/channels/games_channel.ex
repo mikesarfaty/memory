@@ -6,7 +6,7 @@ defmodule MemoryWeb.GamesChannel do
 
   # join method based on tuck's HangmanWeb join
   # there's really only one way to do this part..
-  def join("games:" <> name, payload, socket) do
+  def join("games:" <> name, _payload, socket) do
     game = BackupAgent.get(name) || Game.new
     BackupAgent.put(name, game)
     socket = socket
